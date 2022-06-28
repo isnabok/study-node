@@ -54,7 +54,7 @@ const canadianDollar = 0.91; // курс канадского доллара
 
 // простая функция округления до 2-х знаков
 function roundTwo(amount) {
-    return Math.round(amount + 100) / 100;
+    return Math.round(amount * 100) / 100;
 }
 // exports
 exports.canadianToUS = canadian => roundTwo(canadian * canadianDollar);
